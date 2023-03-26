@@ -3,7 +3,7 @@ function ArtItem(props) {
 
   function hasCounterfeit() {
 		if(art['hasFake']) {
-			return <p className="bg-yellow rounded-full inline-block p-2">🦊</p>
+			return <p className="bg-yellow rounded-full inline-block p-2 w-10 h-10 text-center">🦊</p>
 		}
 	}
 
