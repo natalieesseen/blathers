@@ -1,5 +1,5 @@
 function ArtItem(props) {
-  const { key, art } = props;
+  const { art } = props;
 
   function hasCounterfeit() {
 		if(art['hasFake']) {
@@ -8,7 +8,7 @@ function ArtItem(props) {
 	}
 
   return (
-    <div className="bg-beige relative rounded-3xl w-96 mx-auto p-10 pt-4">
+    <div className="bg-beige relative rounded-3xl w-96 mx-auto p-10 pt-4 my-20">
       <h3 className="bg-brown text-beige rounded-full -rotate-3 float-left -ml-4 -mt-10 px-6 py-2 text-xl font-medium">
         {art["name"]["name-USen"]}
       </h3>

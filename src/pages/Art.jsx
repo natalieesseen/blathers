@@ -23,15 +23,13 @@ function Art() {
 	}
 
   return (
-		<div className="my-10">
-    {Object.entries(art).slice(0, limit).map(([key, art]) => (
-			<div className="my-20">
-				<ArtItem key={key} art={art} />
-			</div>
-		))}
+	<div className="my-10">
+    {Object.entries(art).slice(0, limit).map(([, art]) => (
+        <ArtItem key={art["id"]} art={art} />
+	  ))}
 
-			<button onClick={showMoreItems} className="bg-beige text-brown rounded-full px-6 py-2 text-xl font-medium hover:-rotate-3 transition-transform">Load more</button>
-		</div>
+		<button onClick={showMoreItems} className="bg-beige text-brown rounded-full px-6 py-2 text-xl font-medium hover:-rotate-3 transition-transform">Load more</button>
+	</div>
   );
 }
 
