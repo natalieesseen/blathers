@@ -28,7 +28,7 @@ function Art() {
         <ArtItem key={art["id"]} art={art} />
 	  ))}
 
-		<button onClick={showMoreItems} className="bg-beige text-brown rounded-full px-6 py-2 text-xl font-medium hover:-rotate-3 transition-transform">Load more</button>
+		{ limit <= Object.entries(art).length ? <button onClick={showMoreItems} className="bg-beige text-brown rounded-full px-6 py-2 text-xl font-medium hover:-rotate-3 transition-transform">Load more</button> : '' }
 	</div>
   );
 }
